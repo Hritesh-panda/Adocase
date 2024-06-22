@@ -1,0 +1,33 @@
+.dashboard-all {
+  background-color: #f0f4ff; /* Light grey-blue background */
+  height: 100vh;
+}
+.dashboard-second {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f4ff; /* Light grey-blue background */
+  height: 100vh; /* Full viewport height */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Adjusting the size and margins to match the provided image */
+.dashboard-second > div {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* .given-information {
+  width: 300px;
+} */
+
+.questions-section {
+  width: calc(
+    100% - 340px
+  ); /* Remaining width after accounting for GivenInformation and some margin */
+  margin-left: 20px;
+  overflow-y: auto; /* Ensure content is scrollable if it overflows */
+}

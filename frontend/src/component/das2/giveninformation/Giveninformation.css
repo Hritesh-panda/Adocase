@@ -1,0 +1,92 @@
+.given-information {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.given-inf {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.leftgivi {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+.leftgivi i {
+  font-size: 1rem;
+}
+.back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.content {
+  margin-top: 20px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.text-entered h3,
+.uploads h3 {
+  font-size: 1em;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.text-entered p {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.uploads {
+  margin-top: 20px;
+}
+
+.uploaded-files {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.uploaded-files p {
+  margin: 0;
+}
+
+.file-count {
+  background-color: #007bff;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 5px;
+}
+
+.file-list {
+  margin-top: 10px;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.file-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}

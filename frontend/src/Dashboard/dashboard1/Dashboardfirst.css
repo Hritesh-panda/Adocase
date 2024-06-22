@@ -1,0 +1,19 @@
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f0f4ff;
+}
+
+.recent-studies-section,
+.file-upload-section {
+  /* width: 45%; */
+}
+
+.recent-studies-section {
+  margin-right: 10px;
+}
+
+.file-upload-section {
+  margin-left: 10px;
+}

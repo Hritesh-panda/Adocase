@@ -1,0 +1,15 @@
+.dashboard-third-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background-color: #f0f4ff;
+}
+
+.dashboard-third-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* max-width: 1200px; */
+  padding: 20px;
+}

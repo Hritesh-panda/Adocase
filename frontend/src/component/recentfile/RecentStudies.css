@@ -1,0 +1,65 @@
+.recent-studies {
+  width: 300px;
+  padding: 20px 20px 70px 20px;
+  background-color: #f8faff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-studies h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.study-item {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.recenttime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 10px;
+}
+.study-item h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #025bd4;
+}
+
+.study-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #999;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status.completed {
+  background-color: #e0f8e0;
+  color: #00b300;
+}
+
+.status.in-progress {
+  background-color: #fff0e0;
+  color: #ff8c00;
+}
+
+.status.failed {
+  background-color: #ffe0e0;
+  color: #ff0000;
+}

@@ -1,0 +1,113 @@
+.given-info-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.given-info-content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.given-info-content h2 {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+.givrec-i {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.givred-b {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+}
+.search-term {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.recent-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  flex-direction: column;
+}
+
+.type-tag {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.deeds {
+  background-color: #e0f7fa;
+  color: #00796b;
+}
+
+.contract {
+  background-color: #fff9c4;
+  color: #f57f17;
+}
+
+.court-order {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.status {
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+
+.completed {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.in-progress {
+  background-color: #fcf8e3;
+  color: #8a6d3b;
+}
+
+.failed {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
+.title {
+  flex: 1;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.time {
+  font-size: 12px;
+  color: #999;
+}

@@ -9,9 +9,9 @@
   align-items: center;
 }
 .logo {
-  font-size: 24px;
+  font-size: 1.7rem;
   font-weight: bold;
-  color: #025bd4;
+  color: #111;
 }
 
 .nav ul {
@@ -30,15 +30,16 @@
   color: black;
   font-size: 16px;
   padding: 5px 15px;
+  font-weight: 500;
 }
 .nav a:hover {
   color: white;
-  background-color: #025bd4;
+  background: linear-gradient(65.3deg, #0575e6 6.93%, #021b79 89.92%);
   border-radius: 20px;
 }
 .nav a.active {
   color: white;
-  background-color: #025bd4;
+  background: linear-gradient(65.3deg, #0575e6 6.93%, #021b79 89.92%);
   padding: 5px 15px;
   border-radius: 20px;
 }
@@ -52,4 +53,19 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+.bell-nav {
+  position: relative;
+}
+.dot-n {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #0575e6;
+  position: absolute;
+  top: 6px;
+  right: 2px;
+}
+.profile div i {
+  font-size: 1.2rem;
 }

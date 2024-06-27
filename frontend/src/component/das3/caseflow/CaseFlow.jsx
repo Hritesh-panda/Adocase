@@ -41,18 +41,6 @@ const CaseFlow = () => {
             Authorizes a lawyer to represent the client in court.
           </p>
         </div>
-        <div className="item">
-          <p className="title">Written Statement/Answer</p>
-          <p className="description">
-            The defendant's formal response to the plaint.
-          </p>
-        </div>
-        <div className="item">
-          <p className="title">Reply to Written Statement</p>
-          <p className="description">
-            Addresses points raised in the defendant's written statement.
-          </p>
-        </div>
       </div>
       <div className="section">
         <div className="section-title">

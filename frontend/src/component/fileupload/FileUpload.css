@@ -6,27 +6,36 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
   position: relative;
+  text-align: left;
 }
 
 .file-upload-container h3 {
   margin-bottom: 15px;
   font-size: 16px;
   color: #333;
+  font-weight: 500;
 }
-
-.file-upload-container input[type="text"] {
+.file-upload-container h3 i {
+  color: #0575e6;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+.file-upload-container textarea {
   width: 100%;
+  height: 100px;
   padding: 10px;
   border: 1px solid #e0e0e0;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 20px;
   box-sizing: border-box;
+  resize: none;
 }
 
 .upload-area {
   padding: 20px;
-  border: 2px dashed #ccc;
-  border-radius: 5px;
+  border: 2px dashed #b3afaf;
+  border-radius: 10px;
   text-align: center;
   margin-bottom: 20px;
   color: #999;
@@ -35,14 +44,27 @@
 .upload-placeholder {
   margin-bottom: 10px;
 }
-
+.upload-placeholder div i {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #999;
+}
 .upload-placeholder a {
   color: #025bd4;
-  text-decoration: none;
+  text-decoration: underline;
 }
-
+.upload-area p:nth-child(even) {
+  color: #7c7c7c;
+  font-weight: 700;
+}
+.upload-area p:nth-child(odd) {
+  color: #838383;
+  margin-top: 0;
+  font-size: 1rem;
+}
 .uploaded-files {
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .uploaded-files h4 {
@@ -55,6 +77,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+.uploaded-files ul li span {
+  text-align: left;
 }
 
 .file-item {
@@ -73,11 +98,11 @@
 }
 
 .file-icon.pdf {
-  background-color: red;
+  color: red;
 }
 
 .file-icon.docx {
-  background-color: blue;
+  color: blue;
 }
 
 .file-item button {
@@ -95,7 +120,8 @@
   position: absolute;
   right: 20px;
   bottom: 10px;
-  background-color: #025bd4;
+  background: linear-gradient(65.3deg, #0575e6 6.93%, #021b79 89.92%);
+
   color: #fff;
   border: none;
   /* border-radius: 5px; */

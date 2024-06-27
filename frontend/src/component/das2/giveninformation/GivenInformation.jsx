@@ -3,12 +3,12 @@ import "./Giveninformation.css"; // Importing the CSS file
 
 const GivenInformation = () => {
   return (
-    <div className="given-information">
+    <div className="given-informations">
       <div className="given-inf">
         <div className="leftgivi">
           <i class="bi bi-chevron-left"></i>
         </div>
-        <button className="back-button">Back to home</button>
+        <button className="back-buttonn">Back to home</button>
       </div>
       <div className="content">
         <h2>Given information</h2>

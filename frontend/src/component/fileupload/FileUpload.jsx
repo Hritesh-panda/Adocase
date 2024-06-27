@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./FileUpload.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilePdf, faFileWord } from "@fortawesome/free-solid-svg-icons";
 const FileUpload = () => {
   const [files, setFiles] = useState([
     { name: "Case document.pdf", type: "pdf" },
@@ -12,18 +13,35 @@ const FileUpload = () => {
     setFiles(files.filter((_, i) => i !== index));
   };
 
+  const getFileIcon = (type) => {
+    switch (type) {
+      case "pdf":
+        return <FontAwesomeIcon icon={faFilePdf} />;
+      case "docx":
+        return <FontAwesomeIcon icon={faFileWord} />;
+
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className="file-upload-container">
       <h3>
-        Get Complete info about any case from AI-driven research assistance
+        <i class="bi bi-journal"></i>Get Complete info about any case from
+        AI-driven research assistance
       </h3>
-      <input
-        type="text"
+      <textarea
+        name=""
+        id=""
         placeholder="Ex: Land dispute, Mumbai, recent judgments."
-        maxLength="80"
-      />
+      ></textarea>
+
       <div className="upload-area">
         <div className="upload-placeholder">
+          <div>
+            <i class="bi bi-upload"></i>
+          </div>
           <span>
             Drag and drop here or click here to{" "}
             <a href="#upload">Upload a file</a>
@@ -39,7 +57,9 @@ const FileUpload = () => {
         <ul>
           {files.map((file, index) => (
             <li key={index} className="file-item">
-              <span className={` ${file.type}`}></span>
+              <span className={`file-icon ${file.type}`}>
+                {getFileIcon(file.type)}
+              </span>
               {file.name}
               <button onClick={() => handleFileRemove(index)}>&times;</button>
             </li>

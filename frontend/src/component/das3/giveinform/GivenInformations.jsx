@@ -2,69 +2,68 @@ import React from "react";
 import "./GivenInformations.css";
 
 const GivenInformations = () => {
+  const recents = [
+    {
+      type: "DEEDS",
+      title: "The Cyberbullying Consp...",
+      status: "Completed",
+      time: "10 min",
+    },
+    {
+      type: "CONTRACT",
+      title: "The Data Breach Dilemma",
+      status: "In progress",
+      time: "1 hour ago",
+    },
+    {
+      type: "COURT ORDER",
+      title: "The Green Tech Scandal",
+      status: "Failed",
+      time: "1 day ago",
+    },
+    {
+      type: "DEEDS",
+      title: "The Cyberbullying Consp...",
+      status: "Completed",
+      time: "2 days ago",
+    },
+  ];
+
   return (
-    <div className="given-info-container">
-      <button className="back-button">Back to home</button>
-      <div className="given-info-content">
+    <div className="recents-list">
+      <div className="given-information">
+        <div className="qus-i">
+          <button className="back-button">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button className="backqui">Back to home</button>
+        </div>
         <h2>Given information</h2>
-        <p>Your search</p>
-        <p className="search-term">Habeas Corpus</p>
-        <p>Recents</p>
-        <div className="recent-item">
-          <div className="givrec-i">
-            <div className="givred-i1">
-              <span className="type-tag deeds">DEEDS</span>
-            </div>
-            <div className="givred-i2">
-              <span className="status completed">Completed</span>
-            </div>
-          </div>
-          <div className="givred-b">
-            <p className="title">The Cyberbullying Consp...</p>
-            <span className="time">10 min</span>
-          </div>
+        <div className="search-result">
+          <h3>Your search</h3>
+          <p>Habeas Corpus</p>
         </div>
-        <div className="recent-item">
-          <div className="givrec-i">
-            <div className="givred-i1">
-              <span className="type-tag contract">CONTRACT</span>
+        <div className="recents">
+          <h3>Recents</h3>
+          {recents.map((item, index) => (
+            <div
+              key={index}
+              className={`recent-item ${item.status
+                .toLowerCase()
+                .replace(" ", "-")}`}
+            >
+              <div className="item-header">
+                <span className="type">{item.type}</span>
+                <span className="status">{item.status}</span>
+              </div>
+              <div className="item-body">
+                <span className="title">{item.title}</span>
+              </div>
+              <div className="item-footer">
+                <span className="time">{item.time}</span>
+              </div>
             </div>
-            <div className="givred-i2">
-              <span className="status in-progress">In progress</span>
-            </div>
-          </div>
-          <div className="givred-b">
-            <p className="title">The Data Breach Dilemma</p>
-            <span className="time">1 hour ago</span>
-          </div>
-        </div>
-        <div className="recent-item">
-          <div className="givrec-i">
-            <div className="givred-i1">
-              <span className="type-tag court-order">COURT ORDER</span>
-            </div>
-            <div className="givred-i2">
-              <span className="status failed">Failed</span>
-            </div>
-          </div>
-          <div className="givred-b">
-            <p className="title">The Green Tech Scandal</p>
-            <span className="time">1 day ago</span>
-          </div>
-        </div>
-        <div className="recent-item">
-          <div className="givrec-i">
-            <div className="givred-i1">
-              <span className="type-tag deeds">DEEDS</span>
-            </div>
-            <div className="givred-i2">
-              <span className="status completed">Completed</span>
-            </div>
-          </div>
-          <div className="givred-b">
-            <p className="title">The Cyberbullying Consp...</p>
-            <span className="time">2 days ago</span>
-          </div>
+          ))}
         </div>
       </div>
     </div>

@@ -38,10 +38,11 @@ const Header = () => {
           </nav>
           <div className="profile">
             <div>
-              <i class="bi bi-gear-wide-connected"></i>
+              <i class="bi bi-gear"></i>
             </div>
-            <div>
+            <div className="bell-nav">
               <i class="bi bi-bell"></i>
+              <div className="dot-n"></div>
             </div>
             <img src={profile} alt="Profile" />
           </div>

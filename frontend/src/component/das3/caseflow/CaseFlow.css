@@ -1,17 +1,24 @@
 .case-flow-container {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
+  background-color: #fff;
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
 }
 
 .case-flow-container h2 {
   margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 1.2rem;
 }
 
 .instruction {
   color: #007bff;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .section {
@@ -34,15 +41,15 @@
 }
 
 .pre-litigation {
-  background-color: #007bff;
+  background-color: #0575e6;
 }
 
 .litigation {
-  background-color: #28a745;
+  background-color: #0575e6;
 }
 
 .interlocutory {
-  background-color: #ffc107;
+  background-color: #0575e6;
 }
 
 .item {

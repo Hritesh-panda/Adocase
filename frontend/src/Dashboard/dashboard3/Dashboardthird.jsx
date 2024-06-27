@@ -9,10 +9,12 @@ const Dashboardthird = () => {
     <>
       <Header />
       <div className="dashboard-third-container">
-        <div className="dashboard-third-content">
-          <GivenInformations />
-          <CaseFlow />
-          <ProgressSteps />
+        <div className="container">
+          <div className="dashboard-third-content">
+            <GivenInformations />
+            <CaseFlow />
+            <ProgressSteps />
+          </div>
         </div>
       </div>
     </>

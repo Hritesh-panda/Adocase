@@ -60,7 +60,7 @@ const QuestionsSection = () => {
               dog.
             </p>
           </div>
-          <div className="question-item">
+          {/* <div className="question-item">
             <h3>
               4. Has the dog been involved in similar incidents of biting or
               aggression in the past?
@@ -72,7 +72,7 @@ const QuestionsSection = () => {
               This question is relevant to establish a pattern of behaviour and
               the owner's awareness of the dog's propensity for aggression.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
